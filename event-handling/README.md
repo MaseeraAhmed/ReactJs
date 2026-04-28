@@ -1,16 +1,18 @@
-# React + Vite
+# Props- 
+-Its how components talk to each other
+-like argument to a function
+-make component dynamic and truly reusable
+-can pass a javascript value, including fnc, arrays, objects and JSX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Redndering lists-
+use- 1).map method
+2).fliter method
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Keys-
+WHEN YOU RENDER LIST , YOU NEED TO ADD A KEY PROP TO EACH ELEMENT WITH UNIQUE VALUE WITHIN THE LIST
+1)To track the elements in the list
+2) crucial for  react to efficiently update the UI
+3) key prop goes on the outermost repeated element
+4) key is a special prop that react uses internally. its not a prop that you pass to a child component and destructure there to get access to it
