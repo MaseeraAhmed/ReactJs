@@ -4,7 +4,7 @@
 -make component dynamic and truly reusable
 -can pass a javascript value, including fnc, arrays, objects and JSX
 
-# Redndering lists-
+# Rendering lists-
 use- 1).map method
 2).fliter method
 
