@@ -1,4 +1,5 @@
-import React from "react";
+//! Conditional rendering
+// import React from "react";
 
 const UserDetails = ({ name, isOnline }) => {
   return (

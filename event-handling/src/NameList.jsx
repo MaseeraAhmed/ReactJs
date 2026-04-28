@@ -1,3 +1,5 @@
+//! Rendering List
+
 export const NameList = () => {
   const namelist = ["Maseera", "Saad", "Shifa", "Madiha"];
 

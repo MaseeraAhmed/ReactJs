@@ -1,3 +1,7 @@
+//!Rendering list
+//!.filter method to show product price <= 900 
+//!.map method 
+
 export const ProductList = () => {
   const products = [
     {
@@ -17,18 +21,35 @@ export const ProductList = () => {
     },
   ];
 
+  const productElements = products
+    .filter((product) => {
+      return(product.price <= 900);
+    })
+    .map((product) => {
+      return (
+        // if data comes from a database , can use databas key/IDs (unique)
+        //! writing key in div attribute
+        <div key={product.id}>
+          <h3>{product.name}</h3>
+          <h4>Price: ${product.price}</h4>
+        </div>
+      );
+    });
+
   return (
     <div>
       <h2>Our products</h2>
-      {products.map((product) => {
+      {
+        productElements /* {products.map((product) => {
         return (
-          //! if data comes from a database , can use databas key/IDs (unique)
+        //! if data comes from a database , can use databas key/IDs (unique)
           <div key={product.id}>
             <h3>{product.name}</h3>
             <h4>Price: ${product.price}</h4>
           </div>
         );
-      })}
+      })} */
+      }
 
       {/* <h2>Our products</h2>
       <div>
